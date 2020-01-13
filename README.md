@@ -1,14 +1,9 @@
 # tDiagnosableStructures
-(2019) Program służy do optymalizowania t-diagnozowalnych struktur opiniowania diagnostycznego.
+(2019) Application used for t-diagnostic structures optimization.
 
-Program zawiera autorski algorytm redukcji który wyznacza rzędy macierzy zawierające nadmiarowe
-opiniowania diagnostyczne, następnie w danym rzędzie filtruje indeksy tak aby sprawdzać wyłącznie
-istniejące krawędzie, w kolejnym kroku spośród istniejących opiniowań macierzy oblicza miejsce cięcia krawędzi grafu
-(wybranie wiersza macierzy zawierającego najwięcej opiniowań diagnostycznych) i usuwa opiniowanie w dozwolonym miejscu.
-Ponadto posiada zaimplementowane sprawdzenie twierdzeń matematycznych Hakimiego i Amina do sprawdzenia poprawności
-zoptymalizowanego grafu.
+This program using my own reduction algorithm which determines matrix rows contains redundant 
+diagnostic informations and collecting only existing data which is used to iterate on it (realizes only minimum needed iterations).
+Basing on collected data, program is able to cut redundant data from matrix and return optimized graph structure.
+Additionally application has feature to check validity of optimized graph using Hakimi and Amin mathematical theorem.
 
-
-Zastosowanie zoptymalizowanej struktury opiniowania diagnostycznego wnosi duże korzyści ekonomiczne - pozwala
-zaoszczędzić pieniędze, zużywaną energię, moc obliczeniową zachowując tą samą skuteczność w diagnozowaniu
-systemów informatycznych.
+Using optimized t-diagnosis structure provides many benefits in IT systems - saving energy, money and computing power maintaining the same diagnosis effectiveness.
